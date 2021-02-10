@@ -15,3 +15,5 @@ services:
       MYSQL_PASSWORD: 123456
 volumes:
   db_data:
+  # Using created volume
+    external: true
