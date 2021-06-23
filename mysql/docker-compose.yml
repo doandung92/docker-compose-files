@@ -17,3 +17,6 @@ volumes:
   mysql_data:
   # Using created volume
     external: true
+networks:
+  default:
+    name: my_sql
