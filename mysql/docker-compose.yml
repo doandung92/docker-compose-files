@@ -13,10 +13,6 @@ services:
       MYSQL_DATABASE: cmc
       MYSQL_USER: peter
       MYSQL_PASSWORD: 123456
-volumes:
-  mysql_data:
-  # Using created volume
-    external: true
 networks:
   default:
     name: my_sql
