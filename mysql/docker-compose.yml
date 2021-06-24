@@ -6,13 +6,11 @@ services:
     restart: always
     ports:
       - '3306:3306'
-    volumes:
-      - mysql_data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: password 
+      MYSQL_ROOT_PASSWORD: 123456A
       MYSQL_DATABASE: cmc
       MYSQL_USER: peter
-      MYSQL_PASSWORD: 123456
+      MYSQL_PASSWORD: 123456A
 networks:
   default:
     name: my_sql
